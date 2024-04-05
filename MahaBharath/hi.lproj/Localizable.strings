@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MahaBharath
+
+  Created by Madhav on 05/04/24.
+  
+*/
+// ContentView
+"ContentView.mahaBharath_chapter %@" = "महाभारत अध्याय: %@";
+"ContentView.mahaBharath_title" = "महाभारत";
+"ContentView.mahaBharath_author" = "वेदव्यास";

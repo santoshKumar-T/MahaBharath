@@ -1,0 +1,10 @@
+//
+//  Mahabharath-QA.xcconfig
+//  MahaBharath
+//
+//  Created by Madhav on 05/04/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BASE_URL = bhagavad-gita3.p.rapidapi.com/qa

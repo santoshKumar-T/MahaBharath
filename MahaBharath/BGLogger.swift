@@ -17,7 +17,6 @@ protocol BGLoggerType {
 }
 
 extension BGLoggerType {
-
     func verbose(_ message: String, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
         verbose(message, file, function, line)
     }
@@ -40,9 +39,9 @@ extension BGLoggerType {
 }
 
 class BGLogger: BGLoggerType {
-// 1   static let shared = BGLogger()
+    // 1   static let shared = BGLogger()
 //    private init() { }
-   private let log: SwiftyBeaver.Type = {
+    private let log: SwiftyBeaver.Type = {
         let log = SwiftyBeaver.self
         let console = ConsoleDestination()
         log.addDestination(console)
@@ -50,22 +49,22 @@ class BGLogger: BGLoggerType {
     }()
 
     func verbose(_ message: String, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
-        log.verbose(message, file: file, function: function, line: line )
+        log.verbose(message, file: file, function: function, line: line)
     }
 
     func debug(_ message: String, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
-        log.debug(message, file: file, function: function, line: line )
+        log.debug(message, file: file, function: function, line: line)
     }
 
     func info(_ message: String, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
-        log.info(message, file: file, function: function, line: line )
+        log.info(message, file: file, function: function, line: line)
     }
 
     func warning(_ message: String, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
-        log.warning(message, file: file, function: function, line: line )
+        log.warning(message, file: file, function: function, line: line)
     }
 
     func error(_ message: String, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
-        log.error(message, file: file, function: function, line: line )
+        log.error(message, file: file, function: function, line: line)
     }
 }
